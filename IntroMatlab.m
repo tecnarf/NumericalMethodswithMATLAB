@@ -2,8 +2,10 @@ clear; %limpia todas las variables del workspace
 close all; %cierra todas las figuras
 clc; %vacia el command window
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Operaciones y funciones mas comunes en Matlab
+
 %% Asignaciones y definiciones
 var_a = 3;
 var_b = var_a;%podemos asignar el valor de otra variable a una nueva
@@ -33,6 +35,7 @@ Seno_grados_sexagesimales_Matri1 = sind(Matriz1); %el argumento esta grados sexa
 Matriz1_al_cuad_elemento = Matriz1.^2;
 %Elevar la matriz al cuadrado(MatrizxMatriz)
 Matriz1_al_cuad = Matriz1^2;
+
 %% Operaciones entre matrices
 %Suma y resta de matrices
 Matriz_suma = Matriz1 + Matriz2;
@@ -44,6 +47,7 @@ Matriz_producto = Matriz1*Matriz2;
 div_derecha = Matriz1/Matriz2;%Multiplica la Matriz1 por la inversa de la Matriz2 por la derecha 
 %Por la izquierda(Multiplica una matriz por la inversa de la otra por la izquierda)
 div_izq = Matriz1\Matriz2;%Multiplica la inversa de la Matriz1 por la izquierda de la Matriz2
+
 %Concatenacion de matrices
 concat_der = [Matriz1 Matriz2];
 concat_abajo = [Matriz1; Matriz2];
@@ -326,7 +330,7 @@ disp('Se tardo: ');
 disp(contador);
 disp('iteraciones en generar el numero 5 de forma aleatoria');
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Graficos: Graficar funciones
 %La funcion clave para graficar es plot()
 %Vamos a graficar funciones trigonometricas de -2*pi hasta 2*pi
