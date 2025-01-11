@@ -101,6 +101,7 @@ B(:,3)=[0; 0; 0];%reemplazamos a la columna 3 por una columna de ceros
 C=[0 0 0; 0 0 0; 0 0 0];
 C([1 2],[1 2])=[1 2; 3 4];%asignamos los valores de esta matriz 2x2 a la matriz C 3x3
 %en los lugares comprendidos por la submatriz C([1 2],[1 2])=[C(1,1) C(1,2); C(2,1) C(2,2)]
+
 %% Funciones especiales para matrices y vectores
 %Para mas informacion sobre las funciones que ofrece MATLAB escriba en el
 %command window help seguido de la funcion en cuestion, por ejemplo, help conv
