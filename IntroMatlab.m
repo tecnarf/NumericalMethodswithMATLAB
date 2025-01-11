@@ -1,10 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear; %limpia todas las variables del workspace
 close all; %cierra todas las figuras
 clc; %vacia el command window
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Operaciones y funciones mas comunes en Matlab
+%% OPERACIONES Y FUNCIONES MAS COMUNES EN MATLAB
+  
+  &&&  ASIGNACIONES Y DEFINICIONES
+  &&&  DEFINICION DE VECTORES Y MATRICES
+  &&&  MATRICES
+       &&&%  OPERACIONES CON Y ENTRE MATRICES
+       &&&%  CONCATENACION DE MATRICES
+       &&&%  INDEXACION DE MATRICES
+  &&& FUNCIONES ESPECIALES PARA MATRICES Y VECTORES
+  &&& MATRICES ESPECIALES
 
 %% Asignaciones y definiciones
 var_a = 3;
@@ -20,10 +29,11 @@ vector_intervalo=-2*pi:0.0001:2*pi;%vector con componentes que van desde inicio:
 %el vector_intervalo definido anteriormente contiene a los extremos del
 %intervalo
 %% Definicion de matrices
-Matriz1 = [1 -2 1; 2 -1 4; 3 -2 2];%Una nueva fila se escribe despues del punto y coma
-Matriz1Transpuesta = Matriz1';%comilla simple ' con alt+39
+Matriz1 = [1 -2 1; 2 -1 4; 3 -2 2]; %Una nueva fila se escribe despues del punto y coma
+Matriz1Transpuesta = Matriz1'; %comilla simple ' con alt+39
 Matriz2 = Matriz1Transpuesta;
 
+%%Matrices
 
 %% Operaciones con matrices
 %Sumar un escalar a una matriz
@@ -35,7 +45,6 @@ Seno_grados_sexagesimales_Matri1 = sind(Matriz1); %el argumento esta grados sexa
 Matriz1_al_cuad_elemento = Matriz1.^2;
 %Elevar la matriz al cuadrado(MatrizxMatriz)
 Matriz1_al_cuad = Matriz1^2;
-
 %% Operaciones entre matrices
 %Suma y resta de matrices
 Matriz_suma = Matriz1 + Matriz2;
@@ -163,8 +172,10 @@ unos=ones(m,n);
 %principal son las componentes de un vector v
 diagonal=diag(v);
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Funciones de entrada y salida de datos
+%% FUNCIONES DE ENTRADA Y SALIDA
+
 %display(): puede mostrar los valores de variables o cadenas de caracteres
 %pero usaremos solamente disp()
 %disp('Mostrando cadena de caracteres');
@@ -174,8 +185,10 @@ diagonal=diag(v);
 %del argumento de la funcion
 %valor_ingresado=input('Ingrese el valor para la nueva variable: ');
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Polinomios y funciones en MATLAB
+%% POLINOMIOS Y FUNCIONES EN MATLAB
+
 %Los polinomios son representados por vectores. Utilizamos la notacion de polinomios 
 %con exponente en orden decreciente de izquierda a derecha(mas frecuente que el
 %ordenamiento ascendente de izquierda a derecha)
@@ -275,9 +288,14 @@ disp(df);
 disp('Expresión simplificada:');
 disp(f_simplified);
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Programacion en lenguaje MATLAB
+%% PROGRAMACION EN LENGUAJE MATLAB
+  %%% ESTRUCTURAS DE CONTROL
+  %%% ESTRUCTURAS DE ITERACION
+
 %% Estructuras de control: if, elseif, else
+
 %Para indicar a MATLAB que terminan las estructuras de control es necesario
 %finalizar con un "end" al termino de las instrucciones
 %if, else y elseif permite ejeutar instrucciones si se cumplen determinadas
@@ -290,7 +308,9 @@ elseif(control_if>1)%nos permite usar una segunda condicion
 else
     disp('El numero ingresado es 1');%En caso de que no se cumpla ni nguna condicion
 end
+
 %% Estructuras de iteracion: for, while
+
 %Permite ejecutar instrucciones un numero exacto de veces
 %Bucle:
 %iteracion:
@@ -331,7 +351,9 @@ disp(contador);
 disp('iteraciones en generar el numero 5 de forma aleatoria');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Graficos: Graficar funciones
+
+%% GRAFICOS DE FUNCIONES
+
 %La funcion clave para graficar es plot()
 %Vamos a graficar funciones trigonometricas de -2*pi hasta 2*pi
 %   (1):Generamos el vector x para evaluar la funcion, esto representa el eje x
@@ -363,6 +385,7 @@ xlabel('Valores de la abscisa (x)');
 ylabel('Valores de la ordenada (y)');
 legend('sen(x)', 'cos(x)','tan(x)','cotan(x)');%identificador de curvas
 title('Grafica de funciones trigonometricas en el intervalo [-2pi, 2pi]');
+
 %% Uso de subplot
 %permite graficar varias funciones en una misma ventana grafica pero cada
 %una por separado
