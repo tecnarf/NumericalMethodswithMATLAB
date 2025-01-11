@@ -8,6 +8,7 @@ clc; %vacia el command window
 var_a = 3;
 var_b = var_a;%podemos asignar el valor de otra variable a una nueva
 var_c = var_a*var_b;
+
 %% Definicion de vectores(o matrices 1xn o nx1)
 %MATLAB asigna el valor 1 para el indice de elemento en la primera posicion  
 vector_fila1 = [1 2 3]; %componentes espaciados entre si
@@ -142,6 +143,7 @@ det_M=det(M);
 inv_M_1=inv(M);
 inv_M_2=M^(-1);%calculo de la inversa por medio del exponente -1
 %%M.^(2) eleva cada uno de los componentes de la matriz al cuadrado
+
 %% Funciones para la creacion de matrices especiales
 m=4;
 n=5;
@@ -223,48 +225,48 @@ area_triangulo_2=area_triangulo_hand(3,4);
 %salvedad de que inline ya no estara disponible en versiones posteriores de
 %MATLAB
 %% El comando sym 
-%Se utiliza para crear variables simbÛlicas en MATLAB. 
-%Las variables simbÛlicas permiten trabajar con expresiones algebraicas, 
-%funciones matem·ticas y otros objetos simbÛlicos de una manera m·s flexible
-%y potente que las variables numÈricas.
-%Algunas de las principales caracterÌsticas y usos del comando sym son:
+%Se utiliza para crear variables simb√≥licas en MATLAB. 
+%Las variables simb√≥licas permiten trabajar con expresiones algebraicas, 
+%funciones matem√°ticas y otros objetos simb√≥licos de una manera m√°s flexible
+%y potente que las variables num√©ricas.
+%Algunas de las principales caracter√≠sticas y usos del comando sym son:
 
-%    Definir variables simbÛlicas: Puedes crear variables simbÛlicas utilizando sym('x'), 
+%    Definir variables simb√≥licas: Puedes crear variables simb√≥licas utilizando sym('x'), 
 %    sym('f(x)'), etc. Estas variables se pueden utilizar en operaciones 
-%    matem·ticas simbÛlicas.
+%    matem√°ticas simb√≥licas.
 
-%    Realizar c·lculos simbÛlicos: Una vez que has definido las variables simbÛlicas, 
-%    puedes realizar operaciones como diferenciaciÛn, integraciÛn, resoluciÛn de ecuaciones,
-%    etc. de manera simbÛlica. Esto es muy ˙til cuando trabajas con expresiones complejas.
+%    Realizar c√°lculos simb√≥licos: Una vez que has definido las variables simb√≥licas, 
+%    puedes realizar operaciones como diferenciaci√≥n, integraci√≥n, resoluci√≥n de ecuaciones,
+%    etc. de manera simb√≥lica. Esto es muy √∫til cuando trabajas con expresiones complejas.
 
-%    ConversiÛn entre formas simbÛlicas y numÈricas: Puedes convertir expresiones simbÛlicas
-%    a formas numÈricas utilizando el comando subs() y viceversa, usando sym().
+%    Conversi√≥n entre formas simb√≥licas y num√©ricas: Puedes convertir expresiones simb√≥licas
+%    a formas num√©ricas utilizando el comando subs() y viceversa, usando sym().
 
-%    SimplificaciÛn y manipulaciÛn simbÛlica: El comando simplify() te permite simplificar 
-%    expresiones simbÛlicas, mientras que expand() y collect() te permiten manipular 
-%    la expresiÛn de diferentes formas.
+%    Simplificaci√≥n y manipulaci√≥n simb√≥lica: El comando simplify() te permite simplificar 
+%    expresiones simb√≥licas, mientras que expand() y collect() te permiten manipular 
+%    la expresi√≥n de diferentes formas.
 
-%    RepresentaciÛn gr·fica: Puedes utilizar las variables simbÛlicas para generar gr·ficos 
-%    de funciones matem·ticas de manera simbÛlica.(como lo hace Geogebra)
+%    Representaci√≥n gr√°fica: Puedes utilizar las variables simb√≥licas para generar gr√°ficos 
+%    de funciones matem√°ticas de manera simb√≥lica.(como lo hace Geogebra)
 
-% Crear una variable simbÛlica 'x'
+% Crear una variable simb√≥lica 'x'
 x = sym('x');
 
-% Definir una expresiÛn simbÛlica
+% Definir una expresi√≥n simb√≥lica
 f = x^3 + 2*x^2 - 5*x + 1;
 
-% Calcular la derivada de la expresiÛn
+% Calcular la derivada de la expresi√≥n
 df = diff(f, x);
 
-% Simplificar la expresiÛn
+% Simplificar la expresi√≥n
 f_simplified = simplify(f);
 
 % Imprimir los resultados
-disp('ExpresiÛn original:');
+disp('Expresi√≥n original:');
 disp(f);
 disp('Derivada:');
 disp(df);
-disp('ExpresiÛn simplificada:');
+disp('Expresi√≥n simplificada:');
 disp(f_simplified);
 
 
@@ -303,7 +305,7 @@ disp('vector transpuesto: ');
 disp(v_transpuesta);
 %El while permite repetir un bucle hasta que se cumpla una condicion cuando
 %no se conoce de antemano el numero exacto de repeticiones que se emplearia
-%con este ejemplo veremos cuatas veces se tardÛ(cuantas veces se ejecute el
+%con este ejemplo veremos cuatas veces se tard√≥(cuantas veces se ejecute el
 %bucle) hasta que el numero aleatorio t fuera 5
 t=round(10*rand());%t es igual a un numero aleatorio entre 0 y 9
 %rand() genera un numero entre 0 y 1
@@ -360,7 +362,7 @@ title('Grafica de funciones trigonometricas en el intervalo [-2pi, 2pi]');
 %una por separado
 figure(3);%Creamos una ventana grafica
 %subplot(m,n,p) donde m y n indican en cuantas filas y columnas se va dividir 
-%la ventana grafica; el numero p es el indice donde ir· la grafica
+%la ventana grafica; el numero p es el indice donde ir√° la grafica
 %---Grafico de sen(x)----
 subplot(2,2,1);
 plot(x,seno);
