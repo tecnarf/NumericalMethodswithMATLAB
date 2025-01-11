@@ -52,6 +52,7 @@ prod_elem=Matriz1.*Matriz2;
 %Division elemento a elemento
 div_elem=Matriz1./Matriz2;%Division por la derecha (barra inclinada hacia la derecha)
 %div_elem=Matriz1.\Matriz2;%Division por la izquierda (barra inclinada hacia la izquierda)
+
 %% Indexacion de matrices
 %La indexacion de matrices en MATLAB es identica la usada en el libros 
 %Elemento de la fila i,columna j de una matriz A
