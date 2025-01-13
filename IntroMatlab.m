@@ -45,6 +45,7 @@ Seno_grados_sexagesimales_Matri1 = sind(Matriz1); %el argumento esta grados sexa
 Matriz1_al_cuad_elemento = Matriz1.^2;
 %Elevar la matriz al cuadrado(MatrizxMatriz)
 Matriz1_al_cuad = Matriz1^2;
+
 %% Operaciones entre matrices
 %Suma y resta de matrices
 Matriz_suma = Matriz1 + Matriz2;
