@@ -217,6 +217,7 @@ polinomio_generado=poly(polin);%se genera un polinomio cuya raices son las compo
 conv_pol_producto=conv(polin,polinomio_generado);%recuerde que el que el grado de un pollinomio 
 %es el exponente de la variable de mayor de exponente y que el producto de dos polinomios
 %tiene por grado la suma de los exponentes de los polinomios factores
+
 %% Funciones inline
 %Permiten crear una funcion(entiendase por funcion al concepto dado en programacion)
 %a partir de una cadena de caracteres 
